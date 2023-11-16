@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45601CE5-0522-44D4-8416-B7F48463057B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tarea_de_Curso</RootNamespace>
+    <AssemblyName>Tarea de Curso</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Empleados\Agregar_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Agregar_Empleado.Designer.cs">
+      <DependentUpon>Agregar_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Agregar_Ingresos_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Agregar_Ingresos_Empleado.Designer.cs">
+      <DependentUpon>Agregar_Ingresos_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Listar_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Listar_Empleados.Designer.cs">
+      <DependentUpon>Listar_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Mostrar_Ingresos_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Mostrar_Ingresos_Empleado.Designer.cs">
+      <DependentUpon>Mostrar_Ingresos_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Empleados\Opciones_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Empleados\Opciones_Empleado.Designer.cs">
+      <DependentUpon>Opciones_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inicio_Sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inicio_Sesion.Designer.cs">
+      <DependentUpon>Inicio_Sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Nominas\Agregar_Nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Nominas\Agregar_Nomina.Designer.cs">
+      <DependentUpon>Agregar_Nomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Nominas\Mostrar_Nominas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Nominas\Mostrar_Nominas.Designer.cs">
+      <DependentUpon>Mostrar_Nominas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Nominas\Opciones_Nomina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Nominas\Opciones_Nomina.Designer.cs">
+      <DependentUpon>Opciones_Nomina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Registro_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Registro_Usuario.Designer.cs">
+      <DependentUpon>Registro_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\CalculosN.cs" />
+    <Compile Include="Negocio\EmpleadoN.cs" />
+    <Compile Include="Negocio\NominaN.cs" />
+    <Compile Include="Negocio\UsuarioN.cs" />
+    <Compile Include="POO\Detalles_Nomina.cs" />
+    <Compile Include="POO\Empleado.cs" />
+    <Compile Include="POO\Ingreso.cs" />
+    <Compile Include="POO\Nomina.cs" />
+    <Compile Include="POO\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Empleados\Agregar_Empleado.resx">
+      <DependentUpon>Agregar_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Agregar_Ingresos_Empleado.resx">
+      <DependentUpon>Agregar_Ingresos_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Listar_Empleados.resx">
+      <DependentUpon>Listar_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Mostrar_Ingresos_Empleado.resx">
+      <DependentUpon>Mostrar_Ingresos_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Empleados\Opciones_Empleado.resx">
+      <DependentUpon>Opciones_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inicio_Sesion.resx">
+      <DependentUpon>Inicio_Sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Nominas\Agregar_Nomina.resx">
+      <DependentUpon>Agregar_Nomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Nominas\Mostrar_Nominas.resx">
+      <DependentUpon>Mostrar_Nominas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Nominas\Opciones_Nomina.resx">
+      <DependentUpon>Opciones_Nomina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Registro_Usuario.resx">
+      <DependentUpon>Registro_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
